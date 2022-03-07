@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetry-pypi-proxy-plugin"
+version = "0.1.0"
+description = ""
+authors = ["Tom Forbes <tom@tomforb.es>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+poetry = "==1.2.0a2"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.plugins."poetry.plugin"]
+foo-command = "poetry_pypi_proxy_plugin:PPPPlugin"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
